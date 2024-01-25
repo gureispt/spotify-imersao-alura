@@ -1,5 +1,6 @@
 body{
     background-color: #000;
+    font-family: var(--font-dm-sans);
 }
 .sidebar{
     position: fixed;
@@ -40,8 +41,7 @@ body{
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
-    font-family: "DM Sans", sans-serif;
+    font-size: 14px;   
 }
 
 .biblioteca{
@@ -68,8 +68,7 @@ body{
     background-color: transparent;
     border: 0px;
     font-size: 14px;
-    font-weight: 700;
-    font-family: "DM Sans" , sans-serif;
+    font-weight: 700;    
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -109,8 +108,7 @@ body{
 
 .section-playlist__conteudo .text{
     padding-bottom: 14px;
-    color: #fff;
-    font-family: "DM Sans", sans-serif;
+    color: #fff;   
 }
 
 .section-playlist__conteudo .title{
@@ -130,7 +128,6 @@ body{
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -167,39 +164,43 @@ body{
     border-radius: 20px;
 }
 
-.footer .footer__conteudo{
+.footer{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    padding: 11px 24px 7px 15px;
-    padding-bottom: 25px;
-    margin: 10px 10px;
+    left: 0;
+    right: 0;
+    padding: 15px 40px;
     background-image: linear-gradient(90deg,#af2896,#509bf5);
 }
 
-.footer .footer__conteudo .title{
+.footer .footer__conteudo{
+    flex-shrink: 0;
+}
+
+.footer .footer__title{
     color: #fff;
-    font-family: "DM Sans", sans-serif;
+    
+    font-weight: 700;
     font-size: 14px;
-    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.footer .footer__conteudo .subtitle{
+.footer .footer__subtitle{
     color: #fff;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.footer .footer__conteudo .footer__button{
+.footer button{
     background-color: #fff;
-    font-size: 1rem;
+    color: #000000;
+    font-size: 16px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
-    border: 0;
-    border-radius: 9999px;
-    padding: 8px 32px;
-    margin-right: 60px;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
